@@ -1,6 +1,6 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata, Viewport } from "next";
-import localFont from 'next/font/local';
+import localFont from "next/font/local";
 import "./globals.css";
 
 const soriaFont = localFont({
@@ -14,12 +14,13 @@ const vercettiFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Mohit Virli ✌️",
-  description: "A frontend developer by profession, a creative at heart.",
-  keywords: "Mohit Virli, Frontend Engineer, React Developer, Three.js, Creative Developer, Web Development, Angular, JavaScript, TypeScript, Portfolio",
-  authors: [{ name: "Mohit Virli" }],
-  creator: "Mohit Virli",
-  publisher: "Mohit Virli",
+  title: "Hey , I'm Siddeshwar",
+  description: "A Full-Stack developer by profession, a creative at heart.",
+  keywords:
+    "Siddeshwar Madargave, Full-Stack Engineer, React Developer, Three.js, Creative Developer, Web Development, Angular, JavaScript, TypeScript, Portfolio",
+  authors: [{ name: "Siddeshwar Madargave" }],
+  creator: "Siddeshwar Madargave",
+  publisher: "Siddeshwar Madargave",
   formatDetection: {
     email: false,
     address: false,
@@ -31,22 +32,22 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   openGraph: {
-    title: "Mohit Virli - Frontend Engineer",
-    description: "Frontend engineer by profession, creative at heart.",
-    url: "https://mohitvirli.github.io",
-    siteName: "Mohit Virli's Portfolio",
+    title: "Siddeshwar Madargave - Full-Stack Engineer",
+    description: "Full-Stack engineer by profession, creative at heart.",
+    url: "https://siddeshwardm.github.io",
+    siteName: "Siddeshwar Madargave's Portfolio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mohit Virli - Frontend Engineer",
-    description: "Frontend engineer by profession, creative at heart.",
+    title: "Siddeshwar Madargave - Full-Stack Engineer",
+    description: "Full-Stack engineer by profession, creative at heart.",
   },
   verification: {
     google: "GsRYY-ivL0F_VKkfs5KAeToliqz0gCrRAJKKmFkAxBA",
@@ -62,17 +63,18 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" className="overscroll-y-none">
       <body
+        suppressHydrationWarning
         className={`${soriaFont.variable} ${vercettiFont.variable} font-sans antialiased`}
       >
         {children}
       </body>
-      <GoogleAnalytics gaId={'G-7WD4HM3XRE'}/>
+      <GoogleAnalytics gaId="G-7WD4HM3XRE" />
     </html>
   );
 }
