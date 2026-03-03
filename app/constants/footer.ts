@@ -21,7 +21,7 @@ export const FOOTER_LINKS: FooterLink[] = [
   },
   {
     name: 'Instagram',
-    hoverText: '@clevirli',
+    hoverText: '@siddeshwar__jm',
     icon: 'icons/instagram.svg',
     url: 'https://www.instagram.com/siddeshwar__jm/',
   },

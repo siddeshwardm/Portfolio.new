@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Siddeshwar Madargave - Full-Stack Engineer",
     description: "Full-Stack engineer by profession, creative at heart.",
-    url: "https://siddeshwardm.github.io",
+    url: "https://siddeshwardm.github.io/Portfolio.new/",
     siteName: "Siddeshwar Madargave's Portfolio",
     locale: "en_US",
     type: "website",
